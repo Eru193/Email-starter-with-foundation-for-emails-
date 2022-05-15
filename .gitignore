@@ -1,0 +1,6 @@
+node_modules
+/build/
+/build_email/
+/.git/
+/**/package-lock.json
+

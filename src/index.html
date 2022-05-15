@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>...</title>
+    <meta name="description" content="" />
+
+    <meta name="viewport" content="width=device-width" />
+
+    <meta property="og:image" content="" />
+
+    <link rel="stylesheet" href="css/styles.min.css" />
+  </head>
+
+  <body>
+    <table class="body" data-made-with-foundation>
+      <tr>
+        <!-- The class, align, and <center> tag center the container -->
+        <td class="float-center" align="center" valign="top">
+          <center>
+            @@include('./templates/header.html')
+
+            <table>
+              <tr>
+                <td>@@loop("./templates/main.html", "../config.json")</td>
+              </tr>
+            </table>
+
+            @@include('./templates/footer.html')
+          </center>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

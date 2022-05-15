@@ -1,0 +1,30 @@
+{
+  "name": "EmailStarterWithFoundation",
+  "version": "1.0.0",
+  "description": "HTML SCSS Starter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx gulp",
+    "build": "npx gulp build",
+    "build-email": "concurrently \"npx gulp build\" \"npx gulp startInlineCss\""
+  },
+  "author": "Eru193",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.27.9",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-file-include": "^2.3.0",
+    "gulp-inline-css": "^4.0.0",
+    "gulp-rsync": "0.0.9",
+    "gulp-sass": "^5.1.0"
+  },
+  "dependencies": {
+    "concurrently": "^7.1.0",
+    "node-sass": "^7.0.1"
+  },
+  "repository": "https://github.com/Eru193/Html-Scss-Starter.git"
+}
